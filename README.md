@@ -12,4 +12,4 @@ Run test multiple times:
 To run test multiple times, please update the Accounting.feature file with new account name and account number.
 
 Run test with different user:
-To run test with different user, please update Resources.resx with username and password. Ideally, username and password should be stored in key-vault. But for the purpose of this assignment it is stored in Resources.resx.
+To run test with different user, please update Resources.resx with user credentials and security questions and answers. Ideally, username and password should be stored in key-vault. But for the purpose of this assignment it is stored in Resources.resx.
