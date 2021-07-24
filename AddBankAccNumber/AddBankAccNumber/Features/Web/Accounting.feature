@@ -17,10 +17,10 @@ Scenario: Add bank account number
 	And I am taken to bank search page
 	And I search for ANZ bank
 	And I am taken to account details page
-	And I enter account name Ranveer Singh Aiden 7
+	And I enter account name Ranveer Singh Aiden 8
 	And I select account type Everyday (day-to-day)
-	And I enter account number 00-000000-000-07
+	And I enter account number 00-000000-000-08
 	And I click continue.
 	Then I am taken to download form page
 	And I navigate to Bank Accounts page 
-	Then Bank account 00-000000-000-07 should be visible
+	Then Bank account 00-000000-000-08 should be visible
