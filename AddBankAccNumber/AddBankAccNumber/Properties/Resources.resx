@@ -129,4 +129,13 @@
   <data name="defaultUsername" xml:space="preserve">
     <value>ranveersinghaiden@gmail.com</value>
   </data>
+  <data name="What is your dream car?" xml:space="preserve">
+    <value>Mustang</value>
+  </data>
+  <data name="What is your dream job?" xml:space="preserve">
+    <value>Astronaut</value>
+  </data>
+  <data name="What was the name of your first pet?" xml:space="preserve">
+    <value>Copper</value>
+  </data>
 </root>

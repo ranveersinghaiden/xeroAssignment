@@ -13,10 +13,12 @@ namespace AddBankAccNumber.POM.Web
         public By AuthenticationContinueButton = By.CssSelector("[data-automationid='auth-continuebutton']");
         public By SecurityQuestionButton = By.CssSelector("[data-automationid='auth-authwithsecurityquestionsbutton']");
 
-        public By FirstPetQuestionInputBox = By.XPath("//form//label[text()='What was the name of your first pet?']/following-sibling::div/input");
-        public By DreamJobQuestionInputBox = By.XPath("//form//label[text()='What is your dream job?']/following-sibling::div/input");
-        public By DreamCarQuestionInputBox = By.XPath("//form//label[text()='What is your dream car?']/following-sibling::div/input");
-        
+        public By FirstQuestionLabel = By.CssSelector("[data-automationid='auth-firstanswer--label']");
+        public By SecondQuestionLabel = By.CssSelector("[data-automationid='auth-secondanswer--label']");
+
+        public By FirstAnswerInputBox = By.XPath("//div[@data-automationid='auth-firstanswer']/input");
+        public By SecondAnswerInputBox = By.XPath("//div[@data-automationid='auth-secondanswer']/input");
+
         public By QuestionConfirmButton = By.CssSelector("[data-automationid='auth-submitanswersbutton']");
     }
 }

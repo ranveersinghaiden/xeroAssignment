@@ -70,29 +70,22 @@ namespace AddBankAccNumber.Steps
         [Given("I answer security questions.")]
         public void GivenIAnswerSecurityQuestionDreamJob()
         {
-            IWebElement questionInput;
-            bool questionOneExists = Test.CheckIfElementIsVisible(LoginPageObject.DreamJobQuestionInputBox);
-            bool questionTwoExists = Test.CheckIfElementIsVisible(LoginPageObject.FirstPetQuestionInputBox);
-            bool questionThreeExists = Test.CheckIfElementIsVisible(LoginPageObject.DreamCarQuestionInputBox);
+            Test.WaitUntilElementIsClickable(LoginPageObject.FirstAnswerInputBox);
 
-            if (questionOneExists)
-            {
-                questionInput = Test.WaitUntilElementIsClickable(LoginPageObject.FirstPetQuestionInputBox);
-                questionInput.Click();
-                questionInput.SendKeys("Copper");
-            }
-            if (questionTwoExists)
-            {
-                questionInput = Test.WaitUntilElementIsClickable(LoginPageObject.DreamJobQuestionInputBox);
-                questionInput.Click();
-                questionInput.SendKeys("Astronaut");
-            }
-            if (questionThreeExists)
-            {
-                questionInput = Test.WaitUntilElementIsClickable(LoginPageObject.DreamCarQuestionInputBox);
-                questionInput.Click();
-                questionInput.SendKeys("Mustang");
-            }
+            string questionOne = Test.WaitUntilElementIsClickable(LoginPageObject.FirstQuestionLabel).Text.Trim();
+            string questionTwo = Test.WaitUntilElementIsClickable(LoginPageObject.SecondQuestionLabel).Text.Trim();
+
+            IWebElement answerInput;
+
+            // answer question one
+            answerInput = Test.WaitUntilElementIsClickable(LoginPageObject.FirstAnswerInputBox);
+            //answerInput.Click();
+            answerInput.SendKeys(envSetup.GetEnvironmentVariables(questionOne));
+
+            // answer question two
+            answerInput = Test.WaitUntilElementIsClickable(LoginPageObject.SecondAnswerInputBox);
+            //answerInput.Click();
+            answerInput.SendKeys(envSetup.GetEnvironmentVariables(questionTwo));
 
             Test.WaitUntilElementIsClickable(LoginPageObject.QuestionConfirmButton).Click();
         }

@@ -10,10 +10,12 @@ namespace AddBankAccNumber.Steps
     class CommonSteps
     {
         public static SeleniumHelper Test;
+        public static EnvironmentSetup envSetup;
 
         public CommonSteps()
         {
             Test = new SeleniumHelper();
+            envSetup = new EnvironmentSetup();
         }
     }
 }

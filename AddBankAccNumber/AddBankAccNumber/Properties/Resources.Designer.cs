@@ -95,5 +95,32 @@ namespace AddBankAccNumber.Properties {
                 return ResourceManager.GetString("defaultUsername", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mustang.
+        /// </summary>
+        internal static string What_is_your_dream_car_ {
+            get {
+                return ResourceManager.GetString("What is your dream car?", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Astronaut.
+        /// </summary>
+        internal static string What_is_your_dream_job_ {
+            get {
+                return ResourceManager.GetString("What is your dream job?", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Copper.
+        /// </summary>
+        internal static string What_was_the_name_of_your_first_pet_ {
+            get {
+                return ResourceManager.GetString("What was the name of your first pet?", resourceCulture);
+            }
+        }
     }
 }
