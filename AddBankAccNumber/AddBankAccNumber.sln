@@ -12,6 +12,7 @@ Global
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{35406B13-1ECB-4D2A-8980-EF42E1FDCBB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+        {35406B13-1ECB-4D2A-8980-EF42E1FDCBB4}.Info|Any CPU.ActiveCfg = Debug|Any CPU
 		{35406B13-1ECB-4D2A-8980-EF42E1FDCBB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35406B13-1ECB-4D2A-8980-EF42E1FDCBB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35406B13-1ECB-4D2A-8980-EF42E1FDCBB4}.Release|Any CPU.Build.0 = Release|Any CPU
@@ -23,7 +24,3 @@ Global
 		SolutionGuid = {67C2811B-FE8F-4DDA-ACC1-F2120A148FE9}
 	EndGlobalSection
 EndGlobal
-
-
-
-
